@@ -6,7 +6,9 @@ import { ChevronDown } from "lucide-react"
 
 import { cn } from "@/utils/style"
 
-const Accordion = AccordionPrimitive.Root
+const Accordion = (props) => (
+  <AccordionPrimitive.Root {...props} type="multiple" />
+)
 
 const AccordionItem = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Item>,
